@@ -25,14 +25,15 @@ public class Main {
 
 
             int i = 0 ;
-            while ( i < in) {
-
-                i++;
-
+            int sum = 0 ;
+            while ( i <= in) {
+                sum = i + sum;
+                i=i+1;
+                //System.out.println(sum);
 
             }
 
-            return i;
+            return sum;
         }
         static int getInputNumber() { // gee, may thi sis useful in another lab?
         Scanner scan = new Scanner(System.in);
